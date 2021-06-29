@@ -1,22 +1,40 @@
 # java_project
 import java.applet.*;
+
 import java.awt.*;
+
 import java.awt.event.*;
+
 public class Micro extends Applet implements ActionListener,ItemListener {
+
     Button b1;
+    
     Label l1,l2,l3,l4,l5,l6,l7;
+    
     TextField t1,t2,t3,t4,t5,t6;
+    
     CheckboxGroup cbg;
+    
     Checkbox Male,Female;
+    
     String msg;
+    
     public void init(){
+    
        FlowLayout layout=new FlowLayout(25,50,50);
+       
         this.setLayout(layout);
+        
         b1=new Button("SUBMIT");
+        
         b1.addActionListener(this);
+        
         l1=new Label("Name",Label.CENTER);
+        
         l2=new Label("Post");
+        
         l3=new Label("Phone no");
+        
         l4=new Label("Address");
         l5=new Label("Experience(In Yrs)");
         l6=new Label("Age");
